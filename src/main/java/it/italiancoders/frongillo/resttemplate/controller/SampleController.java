@@ -18,7 +18,7 @@ public class SampleController {
         return ResponseEntity.ok(new HelloMessage("Ciao "+name));
     }
 
-    @RequestMapping(value="/public/api/hello", method= RequestMethod.POST)
+    @RequestMapping(value="/public/api/helloPost", method= RequestMethod.POST)
     public ResponseEntity<?> publicPostHelloWorld(@RequestBody Person person){
         return ResponseEntity.ok(new HelloMessage("Ciao "+
                                      person.getName()+" "+
