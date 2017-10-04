@@ -26,7 +26,7 @@ public class RestTemplateApplication {
 
 
 	@Bean
-	public CommandLineRunner loadData() {
+	public CommandLineRunner testRestTemplate() {
 		return (args) -> {
 
 			/*
